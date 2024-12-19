@@ -1,0 +1,161 @@
+/* 通用樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.main-container {
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 左側面板樣式 */
+.left-panel {
+    width: 330px;
+    background: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.photo-panel {
+    background-image: url('profile-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.text-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.nccu-logo {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 右側面板樣式 */
+.right-panel {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
+}
+
+.timeline {
+    margin-top: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    width: 120px;
+    color: #0077b6;
+}
+
+.timeline-item .description {
+    flex-grow: 1;
+}
+
+/* 作業清單樣式 */
+.homework ul {
+    list-style: none;
+    padding: 0;
+}
+
+.homework li a {
+    text-decoration: none;
+    color: #0077b6;
+    transition: color 0.3s;
+}
+
+.homework li a:hover {
+    color: #005f99;
+}
+
+/* 音樂展示樣式 */
+.music-gallery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap; /* 禁止換行 */
+}
+.music-item {
+    text-align: center;
+    width: 120px; /* 固定每個音樂項目的寬度，名稱與圖片對齊 */
+    display: flex;
+    flex-direction: column; /* 垂直排列圖片與名稱 */
+    align-items: center;
+}
+.music-gallery img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.music-gallery img:hover {
+    transform: scale(1.1);
+}
+.music-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    width: 100%; /* 名稱與容器寬度一致 */
+    white-space: nowrap; /* 禁止換行 */
+    overflow: hidden; /* 超出部分隱藏 */
+    text-overflow: ellipsis; /* 超出部分顯示省略號 */
+}
+.note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+#music-name-list p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
